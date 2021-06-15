@@ -1,0 +1,67 @@
+/*
+0-340px:        Phone-small
+341-375px:      Iphone-x
+376-576px:      Phone-medium
+577-767px:      Phone-large
+768-991px:      Tablet
+992-1024px:     Ipad-pro
+1025-1200px:    Tab-land
+[1200-1800px:]  is where our normal styles apply
+1800px + :      Big Desktop
+*/
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+ul.features-pro li {
+  position: relative;
+  padding-left: 20px; }
+
+ul.features-pro li:before {
+  content: "";
+  font-size: 30px;
+  background-image: url(https://boomdevs.com/wp-content/uploads/2020/12/check-1.svg);
+  position: absolute;
+  left: 0;
+  height: 10px;
+  width: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: calc(50% - 5px); }
+
+.availability_schedule .availability_schedule_inner_wrapp {
+  border: 1px solid #dee2e6;
+  border-right: 0;
+  position: relative; }
+  .availability_schedule .availability_schedule_inner_wrapp .availability_shedule_left_arrow i {
+    position: absolute;
+    top: calc(0% + 25px);
+    left: calc(0% - 25px);
+    font-size: 25px;
+    cursor: pointer;
+    color: #dee2e6; }
+  .availability_schedule .availability_schedule_inner_wrapp .availability_shedule_right_arrow i {
+    position: absolute;
+    top: calc(0% + 25px);
+    right: calc(0% - 25px);
+    font-size: 25px;
+    cursor: pointer;
+    color: #dee2e6; }
+  .availability_schedule .availability_schedule_inner_wrapp .col {
+    padding: 0;
+    border-right: 1px solid #dee2e6; }
+    .availability_schedule .availability_schedule_inner_wrapp .col .availability_column .availability_header {
+      padding: 15px 0;
+      border-bottom: 1px solid #dee2e6; }
+    .availability_schedule .availability_schedule_inner_wrapp .col .availability_column .availability_content {
+      padding: 20px; }
+      .availability_schedule .availability_schedule_inner_wrapp .col .availability_column .availability_content .availability_items {
+        margin-top: 10px;
+        display: none; }
+        .availability_schedule .availability_schedule_inner_wrapp .col .availability_column .availability_content .availability_items .availability_item {
+          padding-top: 5px; }
+
+button:focus {
+  outline: none !important;
+  box-shadow: none !important; }
